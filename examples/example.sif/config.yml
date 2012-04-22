@@ -1,0 +1,18 @@
+outfile: example.sif.png
+outformat: PNG
+width: 320
+height: 320
+layers:
+- name: a.png
+  x: 0
+  y: 0
+- name: b.png
+  x: 160
+  y: 0
+- name: c.png
+  x: 0
+  y: 160
+- name: d.png
+  x: 160
+  y: 160
+- background.jpg

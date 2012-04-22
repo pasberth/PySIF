@@ -1,0 +1,11 @@
+outfile: example-manga-$N.jpg
+outformat: JPEG
+width: 160
+height: 320
+layers:
+- background.jpg
+blocks:
+- a.png
+- b.png
+- c.png
+- d.png
