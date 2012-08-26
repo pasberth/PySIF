@@ -122,7 +122,8 @@ class SpriteImageFormat(object):
             _base = base.copy()
             over_image_width, over_image_height = over_image.size
             over_image = over_image.resize( (layer.width or over_image_width,
-                                             layer.height or over_image_height) )
+                                             layer.height or over_image_height),
+                                            Image.ANTIALIAS )
             bands = over_image.split()
             if len(bands) == 4:
                 alpha = bands[3]

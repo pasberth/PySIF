@@ -1,0 +1,17 @@
+outfile: pasberth-rb-icon
+outformat: PNG
+width:  240
+height: 240
+layers:
+- name:   ruby.png
+  x:      140
+  y:      140
+  width:  80
+  height: 80
+- type:   diff
+  width:  240
+  height: 240
+  layers:
+  - icons/01.png
+  - icons/02.png
+  - icons/03.png
