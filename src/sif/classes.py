@@ -9,14 +9,6 @@ from sif.helpers.path import (
 
 class SpriteImageFormat(object):
     
-    HAS_CONFIG_PARAMS = (
-        "outfile",
-        "outformat",
-        "width",
-        "height",
-        "layers",
-        )
-
     def __init__(self, config=None):
         self.config = self.verify_config(config)
         self._is_loaded = False
@@ -145,9 +137,6 @@ class SpriteImageFormat(object):
 
     def _get_image(self):
         return Image.new('RGBA', (0, 0), (0, 0, 0, 0))
-
-    def has_config_param(self, param_key):
-        return param_key in self.HAS_CONFIG_PARAMS
 
     def open_layer(self, config):
         config = self.verify_layer_config(config)
